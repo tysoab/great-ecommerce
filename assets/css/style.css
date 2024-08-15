@@ -1,0 +1,35 @@
+.banner {
+  height: 60vh;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("/assets/images/watch-4449152_1920.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* section header */
+
+.section-header::before {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid #f52565;
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-brand {
+    margin-right: 0 !important;
+  }
+
+  .navbar .navbar-collapse,
+  .navbar ul.navbar-nav {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+}
